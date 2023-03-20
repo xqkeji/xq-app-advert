@@ -1,0 +1,31 @@
+<?php
+return [
+	'position'=>'广告位',
+	'advert-position-admin'=>'广告位管理',
+	'advert position name'=>'广告位名称',
+	'advert position'=>'广告位',
+	'advert-position-add'=>'添加广告位',
+	'add position success'=>'添加广告位成功',
+	'edit position success'=>'编辑广告位成功',
+	'advert-position-edit'=>'编辑广告位',
+	'add advert success'=>'添加广告成功',
+	'edit advert success'=>'编辑广告成功',
+	'advert-advert-edit'=>'编辑广告',
+	
+	'success b_open position status'=>'批量开启成功',
+	'success b_close position status'=>'批量关闭成功',
+	'success b_delete position'=>'批量删除成功',
+	'desc'=>'描述',
+	'text'=>'文本',
+	'image'=>'图片',
+	'text advert'=>'文字广告',
+	'image advert'=>'图片广告',
+	'delete advert success'=>'删除广告成功',
+	'advert'=>'广告',
+	'advert-advert-admin'=>'广告管理',
+	'advert-advert-add'=>'添加广告',
+	'the advert position is not empty!'=>'广告位不能为空！',
+	'belongs to the advert position'=>'所属广告位',
+	'belongs to the advert position type'=>'所属广告位类型',
+	
+];
