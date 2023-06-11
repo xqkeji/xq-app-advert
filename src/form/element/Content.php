@@ -30,7 +30,15 @@ return [
 			}
 		},
 		'format'=>function($element,$value){
-			return html_entity_decode($value);
+			if(empty($value))
+			{
+				return '';
+			}
+			else
+			{
+				return html_entity_decode($value);
+			}
+			
 		}
 	],
 ];

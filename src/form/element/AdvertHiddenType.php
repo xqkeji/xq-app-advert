@@ -2,6 +2,7 @@
 return [
 	'hidden',
 	'name'=>'type',
+	'filters'=>['int'],
 	'template'=>'',
 	'event'=>[
 		'format'=>function($element,$value){
