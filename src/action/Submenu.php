@@ -43,7 +43,7 @@ class Submenu extends Action
 				$menuId=(string)$menu->getKey();
 				$row=[
 					'id'=>$menuId,
-					'url'=>$url->get('/advert/advert/admin',[$menuId]),
+					'url'=>$url->get('advert/admin',[$menuId]),
 					'title'=>$menu->getAttr('name')
 				];
 				$result[]=$row;
