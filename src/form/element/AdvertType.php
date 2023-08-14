@@ -6,7 +6,7 @@ return [
 	'text'=>'广告类型',
 	'attr_class'=>'form-select',
 	'attr_value'=>1,
-	'optionsValues'=>[
+	'items'=>[
 		1=>'文字广告',
 		2=>'图片广告',
 	],
