@@ -1,39 +1,25 @@
 <?php
-
-return [
-	'form',
-	[
-		'template'=>'row',
-		'attr_class'=>'form-control',
-		'AdvertHiddenPosId',
-		'AdvertHiddenType',
-		'AdvertTypeText',
+namespace xqkeji\app\advert\form;
+use xqkeji\form\Form;
+class Advert extends Form
+{
+	protected $name='advert';
+	protected $el=[
+		'~AdvertHiddenPosId',
+		'~AdvertHiddenType',
+		'~AdvertTypeText',
 		[
-			'text',
-			'name'=>'name',	
+			'@Name',
 			'text'=>'广告名称',	
-			'attr_required'=>'true',
-			'validators'=>[['required']],
 		],
-		'Content',
-		[
-			'text',
-			'name'=>'url',
-			'text'=>'链接地址',
-			'attr_required'=>'true',
-			'validators'=>[['required']],
-		],
-		[
-			'number',
-			'name'=>'ordernum',
-			'text'=>'序号',
-			'attr_required'=>'true',
-			'attr_style'=>'width:80px;',
-			'validators'=>[['required']],
-			'filters'=>['int'],
-		],
-		'switch',
-		'csrf',
-	]
-];
+		'~Content',
+		'@Url',
+		'@Ordernum',
+		'@SwitchCheck',
+		'@Csrf',
+		'@SubmitReset',
+	];
+
+}
+
 

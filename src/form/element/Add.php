@@ -1,26 +1,28 @@
 <?php
-return [
-	'button',
-	'name'=>'add',
-	'attr_value'=>'添加',
-	'attr_class'=>'btn btn-primary me-1 xq-add',
-	'event'=>[
-		'beforeRender'=>function($element)
+namespace xqkeji\app\advert\form\element;
+use xqkeji\form\element\Button;
+class Add extends Button
+{
+	protected $name='add';
+	protected $attrs=[
+		'value'=>'添加',
+		'class'=>'btn btn-primary me-1 xq-add',
+	];
+	public function beforeRender()
+	{
+		$container=\xqkeji\App::getContainer();
+		$params=\xqkeji\App::getActionParams();
+		$pos_id='';
+		$url=$container->get("url");
+		if(isset($params[0]))
 		{
-			$container=\xqkeji\App::getContainer();
-			$params=xqkeji\App::getActionParams();
-			$pos_id='';
-			$url=$container->get("url");
-			if(isset($params[0]))
-			{
-				$pos_id=$params[0];
-				$element->setAttr('xq-url',$url->get('add',[$pos_id]));
-			}
-			else
-			{
-				$element->setAttr('xq-url',$url->get('add'));
-			}
-			
+			$pos_id=$params[0];
+			$this->setAttr('xq-url',$url->get('add',[$pos_id]));
 		}
-	],	
-];
+		else
+		{
+			$this->setAttr('xq-url',$url->get('add'));
+		}
+	}
+}
+

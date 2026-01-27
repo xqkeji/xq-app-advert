@@ -1,25 +1,24 @@
 <?php
-return [
-	'form',
-	[
-		'template'=>'row',
-		'attr_class'=>'form-control',
-		'AdvertType',
+namespace xqkeji\app\advert\form;
+use xqkeji\form\Form;
+class Position extends Form
+{
+	protected $name='position';
+	protected $el=[
+		'~AdvertType',
 		[
-			'text',
-			'name'=>'name',	
+			'@Name',
 			'text'=>'广告位名称',
-			'validators'=>[['required']],
-			'attr_required'=>'1'
 		],
 		[
-			'text_area',
-			'name'=>'desc',
+			'@Desc',
 			'text'=>'广告位描述',
-			'attr_rows'=>'5',
 		],
-		'switch',
-		'csrf',
-	],
-	
-];
+		'@SwitchCheck',
+		'@Csrf',
+		'@SubmitReset',
+	];
+
+}
+
+
