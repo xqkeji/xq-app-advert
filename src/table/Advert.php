@@ -1,5 +1,4 @@
 ﻿<?php
-<?php
 namespace xqkeji\app\advert\table;
 use xqkeji\form\Table;
 class Advert extends Table
@@ -20,7 +19,7 @@ class Advert extends Table
 		],
 		'@Url',
 		'@Ordernum',
-		'@Switch',
+		'@SwitchCheck',
 		'@CreateTime',
 		'@EditDelete',
 	];

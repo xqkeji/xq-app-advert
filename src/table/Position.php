@@ -25,7 +25,7 @@ class Position extends Table
 				'style'=>'min-width:200px;',
 			],
 		],
-		'@Switch',
+		'@SwitchCheck',
 		'@CreateTime',
 		'~EditDeleteCopy',
 	];

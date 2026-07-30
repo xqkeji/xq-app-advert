@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 namespace xqkeji\app\advert\form\element;
 use xqkeji\form\element\ListItem;
 class EditDeleteCopy extends ListItem
