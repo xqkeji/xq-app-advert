@@ -1,7 +1,7 @@
-<?php
+﻿<?php
 namespace xqkeji\app\advert\form\element;
 use xqkeji\form\element\ListItem;
-class ListAdvertType extends ListItem
+class AdvertType extends ListItem
 {
 	protected $name='type';
 	protected $text='广告类型';

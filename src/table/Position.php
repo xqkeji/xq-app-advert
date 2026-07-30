@@ -1,33 +1,33 @@
-<?php
+﻿<?php
 namespace xqkeji\app\advert\table;
 use xqkeji\form\Table;
-class ListPosition extends Table
+class Position extends Table
 {
 	protected $name='list_position';
 	protected $row=[
 		'class'=>'text-center',
 	];
-	protected $foot='@ListFoot';
+	protected $foot='@Foot';
 	protected $el=[
-		'@ListId',
-		'~ListAdvertType',
+		'@Id',
+		'~AdvertType',
 		[
-			'@ListName',
+			'@Name',
 			'text'=>'广告名称',
 			'attrs'=>[
 				'style'=>'min-width:160px;',
 			],
 		],
 		[
-			'@ListDesc',
+			'@Desc',
 			'text'=>'广告描述',
 			'attrs'=>[
 				'style'=>'min-width:200px;',
 			],
 		],
-		'@ListSwitch',
-		'@ListCreateTime',
-		'~ListEditDeleteCopy',
+		'@Switch',
+		'@CreateTime',
+		'~EditDeleteCopy',
 	];
 }
 

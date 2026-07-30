@@ -1,7 +1,7 @@
-<?php
+﻿<?php
 namespace xqkeji\app\advert\form\element;
 use xqkeji\form\element\ListItem;
-class ListEditDeleteCopy extends ListItem
+class EditDeleteCopy extends ListItem
 {
 	protected $name='operation';
 	protected $text='操作';

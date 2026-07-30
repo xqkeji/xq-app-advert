@@ -1,8 +1,8 @@
-<?php
+﻿<?php
 <?php
 namespace xqkeji\app\advert\table;
 use xqkeji\form\Table;
-class ListAdvert extends Table
+class Advert extends Table
 {
 	protected $name='list_advert';
 	protected $isDrag=true;
@@ -10,19 +10,19 @@ class ListAdvert extends Table
 	protected $row=[
 		'class'=>'text-center',
 	];
-	protected $foot='@ListFoot';
+	protected $foot='@Foot';
 	protected $el=[
-		'@ListId',
-		'~ListAdvertType',
+		'@Id',
+		'~AdvertType',
 		[
-			'@ListName',
+			'@Name',
 			'text'=>'广告名称',
 		],
-		'@ListUrl',
-		'@ListOrdernum',
-		'@ListSwitch',
-		'@ListCreateTime',
-		'@ListEditDelete',
+		'@Url',
+		'@Ordernum',
+		'@Switch',
+		'@CreateTime',
+		'@EditDelete',
 	];
 	public function beforeRender()
 	{
