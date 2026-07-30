@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 namespace xqkeji\app\advert\table;
 use xqkeji\form\Table;
 class Position extends Table
